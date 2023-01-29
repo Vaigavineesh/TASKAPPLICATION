@@ -1,0 +1,8 @@
+{%extends 'base.html'%}<!--inherting base.html-->
+{%block parent%}
+<h1>welcome user {{request.usr}}</h1>
+    <div class="container">
+    <a href="{%url 'task-add' %}">Add New Todo</a>
+    <a href="{%url 'task-list' %}">List All Todos</a></div>
+    
+{%endblock%}
